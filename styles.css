@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsla(199, 95%, 57%, 1);
+  --secondary-color: hsla(215, 69%, 43%, 1);
+
+  --primary-font-color: hsla(0, 0%, 53%, 1);
+  --secondary-font-color: hsla(240, 1%, 25%, 1);
+  font-size: 42.5%; /* 1rem = 10px */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 2.5rem;
+  font-weight: 400;
+
+  overflow: auto;
+  background-color: white;
+}
+
+.wrapper {
+  width: min(65%, 100%);
+  margin-inline: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.col-a {
+  grid-area: A;
+}
+
+.col-b {
+  grid-area: B;
+}
+
+/*=============== NAV ============================ */
+#navigation {
+  margin-block: 4.3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 7rem;
+}
+
+nav ul li a {
+  color: var(--primary-font-color);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#navigation .menu {
+  display: flex;
+  gap: 7rem
+}
+
+#navigation .menu a.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.4rem;
+
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  background: linear-gradient(324.5deg, #2262B9 -107.3%, #2AB7FA 159.51%);
+  border-radius: 4.5rem;
+}
+
+/*=============== HOME ============================ */
+#home .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  grid-template-areas: 'A B';
+}
+
+#home .header {
+  width: 55.9rem;
+}
+
+#home .col-a {
+  align-self: center;
+  justify-self: left;
+}
+
+#home h1 {
+  width: 55.9rem;
+  font-size: 9.4rem;
+  line-height: 11.4rem;
+  color: var(--secondary-font-color);
+}
+
+#home p {
+  margin-top: 4.2rem;
+
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  letter-spacing: 0.04rem;
+
+  color: var(--primary-font-color);
+}
+
+#home a {
+  color: white;
+  font-size: 4rem;
+  line-height: 11.4rem;
+}
+
+#home .col-a a.button {
+  margin-top: 3rem;
+
+  background: linear-gradient(139.33deg, #2AB7FA -37.66%, #2262B9 182.11%);
+  border-radius: 4.5rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.4rem;
+
+  width: 30rem;
+  height: 9rem;
+
+  font-size: 3rem;
+}
+
+#home img {
+  width: 115rem;
+  transform: translateY(-4%)
+}
